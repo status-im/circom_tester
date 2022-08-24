@@ -9,7 +9,7 @@ const util = require("util");
 const exec = util.promisify(require("child_process").exec);
 
 const readR1cs = require("r1csfile").readR1cs;
-const {F1Field} = require("ffjavascript");
+const F1Field = require("ffjavascript").F1Field;
 
 const readWtns = require("snarkjs").wtns.exportJson;
 
